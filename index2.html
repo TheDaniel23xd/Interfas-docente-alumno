@@ -5,9 +5,8 @@
 	<title>Formulario</title>
 	<link rel="stylesheet" href="/Css/boton.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
 	<style>
-		body{font-family: Arial; background-color: #256999; box-sizing: border-box; padding: 100px;}
+		body{font-family: Arial; background-color: #18A383; box-sizing: border-box; padding-top: 100px;}
 
 		form{
 			background-color: white;
@@ -28,9 +27,10 @@
 
 		.field{
 			border: solid 1px #ccc;
-			border-radius: 0 4px 4px 0; 
+			border-radius: 0 5px 5px 0;
 			padding: 10px;
 			width: 240px;
+			
 		}
 
 		.field:focus{
@@ -45,16 +45,19 @@
 			display: inline-block;
 			vertical-align: top;
 		}
-
 		.field-container i{
-			background-color: #eee;
-			border-radius: 4px 0 0 4px; 
+			border: solid 1px #ccc;
+			background-color: #ddd;
+			border-radius: 5px 0 0 5px;
 			color: #888;
 			padding: 10px 10px 11px 10px;
-			border: solid 1px #ccc;
-			max-height: 35px;
 			margin-right: -5px;
 			vertical-align: top;
+		}
+
+		#menu, #formularios{
+			margin: 0 auto;
+			width: 340px;
 		}
 
 		#menu ul{
@@ -70,36 +73,31 @@
 		}
 
 		#menu ul li a{
-			background-color: #ccc;
+			background-color: #ddd;
 			color: #222;
 			display: block;
 			padding: 20px 20px;
 			text-decoration: none;
 		}
+
 		#menu ul li a:hover{
 			background-color: #eee;
-		}
-
-		#formularios, #menu{
-			margin: 0 auto;
-			width: 340px;
 		}
 
 		.active{
 			background-color: white !important;
 		}
-
 		.columns >div{
-			width: 50%;
 			display: inline-block;
 			vertical-align: top;
+			width: 50%;
 			margin-right: -4px;
 		}
 		.columns .field{
 			width: 80px;
 		}
 
-		#form_register{
+		#form-register{
 			display: none;
 		}
 
@@ -108,77 +106,90 @@
 <body>
 	<div id="menu">
 		<ul>
-			<li><a href="#" class="active">Iniciar Sesión</a></li>
+			<li><a href="#" class="active">Iniciar sesión</a></li>
 			<li><a href="#">Registrarse</a></li>
 		</ul>
+
 	</div>
 	<div id="formularios">
-		<form action="" id="form_session">
-
+		<form action="">
 			<p>Correo electrónico:</p>
 			<div class="field-container">
-				<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>	
-				<input type="text" class="field" placeholder="user@example.com"> <br/>
+				<i class="fa fa-envelope-o fa-lg"></i>
+				<input type="text" class="field" placeholder="user@example.com"> <br/>	
 			</div>
-
+			
 			<p>Contraseña:</p>
 			<div class="field-container">
-				<i class="fa fa-key fa-lg" aria-hidden="true"></i>	
+				
+				<i class="fa fa-key fa-lg"></i>
 				<input type="password" class="field" placeholder="*******"> <br/>
 			</div>
+
 			<p class="center-content">
-				<input type="submit" class="btn btn-green" value="Iniciar sesión"> <br/><br/>
+				<input type="submit" class="btn btn-green" value="Iniciar sesión">
 			</p>
-		</form>	
 
-		<form action="" id="form_register">
-			
+		</form>
+
+		<form action="" id="form-register">
+
 			<div class="columns">
-				<div class="field-container">
-					<p> Nombre:</p>
-					<i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>	
-					<input type="text" class="field" placeholder="Marcos"> <br/>
-				</div>
-				<div class="field-container">
-					<p> Apellido:</p>
-					<i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>	
-					<input type="text" class="field" placeholder="Rivas..."> <br/>
-				</div>
+				
+					<div class="field-container">
+						<p>Nombre:</p>
+						<i class="fa fa-user-circle-o fa-lg"></i>
+						<input type="text" class="field" placeholder="Marcos"> <br/>	
+					</div>	
 
+				
+					<div class="field-container">
+						<p>Apellido:</p>		
+						<i class="fa fa-user-circle-o fa-lg"></i>
+						<input type="text" class="field" placeholder="Rivas"> <br/>
+					</div>
 			</div>
+			
+			
 			
 
 			<p>Correo electrónico:</p>
 			<div class="field-container">
-				<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>	
+				
+				<i class="fa fa-envelope-o fa-lg"></i>
 				<input type="text" class="field" placeholder="user@example.com"> <br/>
 			</div>
 
 			<p>Contraseña:</p>
 			<div class="field-container">
-				<i class="fa fa-key fa-lg" aria-hidden="true"></i>	
-				<input type="password" class="field" placeholder="*******"> <br/>
+				
+				<i class="fa fa-key fa-lg"></i>
+				<input type="password" class="field" placeholder="********"> <br/>
 			</div>
 
 			<div class="columns">
 				<div class="field-container">
-					<p> Compañía:</p>
-					<i class="fa fa-building fa-lg" aria-hidden="true"></i>	
+					<p>Compañía:</p>	
+					<i class="fa fa-building fa-lg"></i>
 					<input type="text" class="field" placeholder="Microsoft"> <br/>
 				</div>
-				<div class="field-container">
-					<p> Teléfono:</p>
-					<i class="fa fa-phone fa-lg" aria-hidden="true"></i>	
-					<input type="text" class="field" placeholder="+52 55..."> <br/>
-				</div>
 
+				
+				<div class="field-container">
+					<p>Teléfono:</p>	
+					<i class="fa fa-phone fa-lg"></i>
+					<input type="text" class="field" placeholder="+52 1 5523"> <br/>
+				</div>	
 			</div>
+			
+
 			<p class="center-content">
-				<input type="submit" class="btn btn-green" value="Crear cuenta">
+				<input type="submit" class="btn btn-green" value="Iniciar sesión">
 			</p>
-		</form>	
+
+		</form>
 	</div>
-	
+
 	<script src="jquery.js"></script>
 	<script>
 		$(function(){
@@ -191,5 +202,8 @@
 			});
 		});
 	</script>
+	
 </body>
 </html>
+
+
