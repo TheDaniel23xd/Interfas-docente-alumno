@@ -5,28 +5,30 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<title>Formularios</title>
+	<title>Formulario Alumno</title>
 </head>
 <body>
 	<div class="contenedor-formulario">
 		<div class="wrap">
-			<form action="" class="formulario" name="formulario_registro" method="get">
+			<form action="" class="formulario" name="formulario_registro">
 				<div>
+					<p>Formulario Alumno</p>
 					<div class="input-group">
-						<input type="text" id="nombre" name="nombre">
+						<input pattern="[a-zA-ZñÑ]{3,65}" required type="text" id="nombre" name="nombre">
 						<label class="label" for="nombre">Nombre:</label>
 					</div>
 					<div class="input-group">
-						<input type="email" id="correo" name="correo">
+						<input required type="email"  name="correo">
 						<label class="label" for="correo">Correo:</label>
 					</div>
 					<div class="input-group">
-						<input type="password" id="pass" name="pass">
+						<input required type="password"  name="pass">
 						<label class="label" for="pass">Contraseña:</label>
 					</div>
 					<div class="input-group">
-						<input type="password" id="pass2" name="pass2">
-						<label class="label" for="pass2">Repetir Contraseña:</label>
+						<textarea pattern="[\w]{10,150}" required cols="56" rows="5">
+						</textarea>
+						<label class="label" >Dirección</label>
 					</div>
 					<div class="input-group radio">
 						<input type="radio" name="sexo" id="hombre" value="Hombre">
@@ -34,9 +36,13 @@
 						<input type="radio" name="sexo" id="mujer" value="Mujer">
 						<label for="mujer">Mujer</label>
 					</div>
-					<div class="input-group checkbox">
-						<input type="checkbox" name="terminos" id="terminos" value="true">
-						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					<div class="input-group">
+						<input required type="text" name="text">
+						<label class="label" for="pass">Edad</label>
+					</div>
+					<div class="input-group">
+						<input required type="text"  name="text">
+						<label class="label" for="pass">carrera</label>
 					</div>
 						
 					<input type="submit" id="btn-submit" value="Enviar">
@@ -44,7 +50,5 @@
 			</form>
 		</div>
 	</div>
-
-	<script src="js/formulario.js"></script>
 </body>
 </html>

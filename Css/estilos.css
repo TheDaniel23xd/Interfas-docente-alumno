@@ -25,6 +25,12 @@
 	.contenedor-formulario .formulario {
 	  width: 100%;
 	  margin: auto; }
+	  .contenedor-formulario .formulario p{
+		  text-align: center;
+		color: #303F9F;
+		margin-bottom: 2px;
+
+	  }
 	  .contenedor-formulario .formulario .input-group {
 		position: relative;
 		margin-bottom: 32px; }
@@ -136,4 +142,7 @@
 		transition: all 0.3s ease; }
 		.contenedor-formulario .formulario input[type="submit"]:hover {
 		  background: #1976D2; }
+
+		 
+
   
